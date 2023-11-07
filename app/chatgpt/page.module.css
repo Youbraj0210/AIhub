@@ -1,0 +1,134 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color:#030220;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    height: 90vh;
+    background-color: #03021d;
+    width: 60%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+
+}
+.prompt{
+    height: 10vh;
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#promptinput{
+    width: 50%;
+    height: 2rem;
+    border-radius: 5px;
+    background-color:#050433;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+#promptinput:focus{
+    outline: 2px solid black;
+}
+#submit{
+    padding: 0.75rem;
+    border-radius: 5px;
+    background-color:#5856ff;
+    color: white;
+    border: 1px solid black;
+    font-size: large;
+}
+
+.user{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0.5rem 0;
+}
+.pic{
+    height: 3rem;
+    width: 3rem;
+    background-image: url("./assets/image-3.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+.user>p{
+    align-self: flex-end;
+}
+
+.bot{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    width: 90%;
+    background-color: #5856ff;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+}
+.botpic{
+    height: 3rem;
+    width: 3rem;
+    background-image: url("./assets/logo.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.sidebar{
+    height: 100vh;
+    width: 20vw;
+    background-color:#5856ff;
+    position: absolute;
+}
+
+.title{
+    display: flex;
+    background-color:#03021d ;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.links{
+    display: flex;
+    background-color:#03021d ;
+    margin: 0.5rem;
+    gap: 1rem;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    flex-direction: column;
+    color: white;
+    height: 80vh;
+}
+
+.links>a{
+    color: white;
+    text-decoration: none;
+    border: 2px solid #5856ff;
+    padding: 1rem;
+    border-radius:10px ;
+}
+
+

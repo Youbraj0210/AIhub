@@ -1,0 +1,365 @@
+.hero {
+    background-color: #f6f6f6;
+}
+
+.nav {
+    position: sticky;
+    background: #ffffff;
+    display: flex;
+    border-radius: 100px;
+    margin: 1rem;
+    padding: 1rem;
+    position: sticky;
+    top: 1rem;
+    z-index: 100;
+}
+
+
+.logo {
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.content {
+    display: flex;
+    width: 50%;
+}
+
+.content a {
+    margin-left: 1rem;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 426px) {
+    .nav{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .content{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .logo{
+        margin-bottom   : 0.5rem;
+    }
+  }
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.main_left {
+    font-family: 'Robot', sans-serif;
+    height: 100%;
+    width: 40%;
+    margin: 0rem 0.5rem 1rem 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main_left_top>p {
+    margin: 1rem 0;
+}
+
+.main_left_bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+#tutorial {
+    color: white;
+    width: 100%;
+    height: 150px;
+    background-color: #4c43a5;
+    border-radius: 10px;
+    display: flex;
+    background-image: url("../public/assets/house.jpg");
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    line-height: 1.5rem;
+}
+
+#tutorial > h3,
+#tutorial > p,
+#tutorial > i {
+    z-index: 6;
+}
+
+#tutorial>i {
+    font-size: 2rem;
+}
+
+#tutorial::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+#people {
+    width: 50%;
+    height: 150px;
+    background-color: #1100ac;
+    border-radius: 10px;
+}
+
+#creativity {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 150px;
+    background-color: #4c43a5;
+    border-radius: 10px;
+    display: flex;
+    background-image: url("../public/assets/think.jpeg");
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    color: #040135;
+}
+
+
+#play {
+    height: 100px;
+    width: 100px;
+}
+
+.main_right {
+    height: 100%;
+    width: 60%;
+    margin: 0rem 1rem 1rem 0.5rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 426px) {
+    .main{
+        flex-direction: column;
+    }
+    .main_left{
+        width: 95%;
+        padding: 0;
+        margin: 0rem 0.5rem 1rem 0.5rem;
+    }
+    .main_right{
+        width: 100%;
+        margin-left: 0;
+    }
+    .row{
+        gap: 0;
+    }
+    #creativity{
+        display: none;
+    }
+    .main_left_top>p{
+        text-align: justify;
+    }
+  }
+
+@media (max-width: 321px){
+    #gen,#contact{
+        margin: -0.5rem;
+    }
+    .main_left_top{
+        margin-left: 0.25rem;
+    }
+}
+
+@media (max-width: 769px){
+    
+}
+
+#title>b {
+    color: #554b9e;
+}
+
+#title {
+    display: inline-block;
+}
+
+.box_t {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.side_img {
+    display: inline-flex;
+    margin-left: 1rem;
+}
+
+.images {
+    background: #554b9e;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50px;
+    margin-left: -10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#img1 {
+    background-color: darkcyan;
+    background-image: url("../public/assets/astaunaut-in-dark-sky-upscaled.png");
+}
+
+#img2 {
+    background-color: rgb(87, 158, 158);
+    background-image: url("../public/assets/nightsky.jpg");
+}
+
+#img3 {
+    background-color: rgb(2, 139, 0);
+    background-image: url("../public/assets/house.jpg");
+}
+
+#gen,
+#contact {
+    height: 3rem;
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#gen {
+    background-color: #4c43a5;
+}
+
+#contact {
+    background-color: #e2e1f1;
+    color: black;
+    margin-left: 1rem;
+}
+
+.allimg {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+    gap: 0.5rem;
+}
+
+.disImage {
+    background-color: aqua;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#dimage1 {
+    background-image: url("../public/assets/image-3.jpg");
+    grid-row: 1/4;
+    grid-column: 1/4;
+}
+
+#dimage2 {
+    background-image: url("../public/assets/astaunaut-in-dark-sky-upscaled.png");
+    grid-row: 1/6;
+    grid-column: 4/6;
+}
+
+#dimage3 {
+    background-image: url("../public/assets/cafe.jpg");
+    grid-row: 1/3;
+    grid-column: 6/7;
+}
+
+#dimage4 {
+    background-image: url("../public/assets/show-me-an-image-of-a-cyberpunk-street-scene-with-upscaled.png");
+    grid-row: 3/5;
+    grid-column: 6/7;
+}
+
+#dimage5 {
+    background-image: url("../public/assets/nightsky.jpg");
+    grid-row: 5/8;
+    grid-column: 6/7;
+}
+
+#dimage6 {
+    background-image: url("../public/assets/greenlandscape.jpg");
+    grid-row: 4/6;
+    grid-column: 1/4;
+}
+
+#dimage7 {
+    background-image: url("../public/assets/house.jpg");
+    grid-row: 6/8;
+    grid-column: 1/3;
+}
+
+#dimage8 {
+    background-image: url("../public/assets/train.jpg");
+    grid-row: 6/8;
+    grid-column: 3/6;
+}
+
+.scroller{
+    max-width: 100%;
+    outline: 3px solid black;
+    margin-bottom: 2rem;
+}
+
+#scrollinner{
+    padding-block: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer{
+    width: 100%;
+    background-color: #040135;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.footerleft{
+    display: flex;
+}
+
+
+.footerleft>a{
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
